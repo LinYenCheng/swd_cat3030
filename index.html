@@ -269,6 +269,46 @@
             font-size: 0.95rem;
         }
 
+        /* 故事性真心話區塊樣式 */
+        .story-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .story-meta {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 15px;
+        }
+
+        .story-text p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .chat-log {
+            background-color: #f4f6f8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 25px;
+            font-family: Consolas, Monaco, monospace, "Microsoft JhengHei";
+        }
+
+        .chat-line {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .chat-time { color: #95a5a6; margin-right: 8px; font-size: 0.85rem; }
+        .chat-name { font-weight: bold; color: var(--primary-color); }
+        .chat-name.shop { color: var(--accent-color); }
+
         /* FAQ 問答區塊 */
         .faq-container {
             max-width: 800px;
@@ -376,6 +416,7 @@
             .hero h1 { font-size: 2rem; }
             .info-container { padding: 20px; }
             .case-grid { grid-template-columns: 1fr; }
+            .story-container { padding: 20px; }
         }
     </style>
 </head>
@@ -411,9 +452,39 @@
                     <p>專業<strong>機車鑰匙全遺失、現場手工磨製配鎖</strong>。無樣再生技術，免換全車鎖頭，省時又省錢。</p>
                 </article>
                 <article class="service-card">
-                    <i class="fas fa-key"></i>
+                    <i class="fas fa-car"></i>
                     <h3>汽車晶片鑰匙複製</h3>
                     <p>專業各車系<strong>汽車晶片鑰匙、防拷遙控器備份設定</strong>。有備無患，提供最安心的出行保障。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: #fff;" id="origin-story">
+            <h2 class="section-title">網站架設緣起與顧客真心話</h2>
+            <div class="story-container">
+                <div class="story-meta">
+                    <span><i class="fas fa-info-circle"></i> <strong>備註：</strong>本網站並非店家主動要求製作，而是由在地工程師顧客因感念老闆的熱心協助，主動熱血架設。</span>
+                </div>
+                <article class="story-text">
+                    <p>家裡的爸爸是比較典型的傳統長輩，習慣了「沒苦硬吃」，遇到問題總想著自己解決。那次家裡掛在傳統鐵門內側的掛鎖壞了，因為位置極度隱蔽，從外面看不太到，空間狹小到連大支的破壞剪都很難施力。爸爸不肯驚動店家，硬是從下午拖到晚上六七點，直到我下班回家才發現事情大條。</p>
+                    <p>當時時間已晚，我匆忙打了好幾間竹東當地的鎖店，不是正在吃晚餐，就是已經外出處理其他大案子無法抽身。正當一籌莫展之際，打給了象文堂竹東店的老闆。雖然當時店內正逢人手不足、老闆當下分身乏術無法立刻趕到現場，但他聽出我們的焦急，竟然非常大方地對我說：<strong>「不然我先借你們專業工具，你們帶回去試試看！」</strong></p>
+                    <p>我們帶回工具後折騰老半天，因為不太會施力，進度緩慢。沒想到老闆處理完手邊的工作後，深夜依然惦記著我們，最後還是熱心地親自趕來現場幫忙破壞鎖頭，才讓我們順利解圍。事後看著鎖頭殘骸，我們才發現自己方向根本剪錯了，完全少了一步用手機開燈、用鏡頭探入微觀確認內部結構的關鍵技巧，真的不得不佩服鎖匠師傅的專業與經驗！</p>
+                    
+                    <figure class="chat-log">
+                        <figcaption style="font-weight: bold; margin-bottom: 10px; color: #7f8c8d; font-size: 0.85rem;"><i class="fab fa-line" style="color: #06C755;"></i> 當日 LINE 感謝對話真實還原：</figcaption>
+                        <div class="chat-line">
+                            <span class="chat-time">12:24</span><span class="chat-name">彥成：</span><span>比較感謝老闆當天晚上來幫忙破壞鎖，不然跟我爸弄那個工具老半天，不太會施力 😅</span>
+                        </div>
+                        <div class="chat-line">
+                            <span class="chat-time">12:52</span><span class="chat-name shop">竹東象文堂：</span><span>哈哈，沒事的剛好那天人手不足，只能請你們先自行處理 🫡</span>
+                        </div>
+                        <div class="chat-line">
+                            <span class="chat-time">12:55</span><span class="chat-name">彥成：</span><span>而且後來我看殘骸我們還剪錯方向，少了一步用手機開燈鏡頭確認這招xd</span>
+                        </div>
+                        <div class="chat-line">
+                            <span class="chat-time">01:00</span><span class="chat-name shop">竹東象文堂：</span><span>小技巧，後續有什麼問題都歡迎詢問 👍</span>
+                        </div>
+                    </figure>
                 </article>
             </div>
         </section>
@@ -477,7 +548,8 @@
                         <h3><i class="fas fa-door-open"></i> 居家換鎖/喇叭鎖安裝 <span class="badge-free">竹東免車馬費</span></h3>
                         <p><strong>情況：</strong>新搬家房客需更換房門喇叭鎖、鋁門鎖以策安全。</p>
                         <p><strong>特色：</strong>我們承諾<strong>「竹東區開鎖/換鎖免收車馬費」</strong>！不論是居家開鎖、換鎖、鋁門、木門皆可處理。由充滿熱誠、細心的年輕鎖匠到府服務，安裝穩固，深得竹東街坊鄰居信賴。</p>
-                    </article>
+                    </div>
+                </article>
 
                 <article class="case-card">
                     <div>
